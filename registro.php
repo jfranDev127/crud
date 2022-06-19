@@ -15,12 +15,13 @@
     $sentencia->bindParam(':nombre', $nombre);
     $sentencia->bindParam(':apellido', $apellido);
     $sentencia->bindParam(':usuario', $usuario);
+    $password = password_hash($password, PASSWORD_BCRYPT);
     $sentencia->bindParam(':password', $password);
     $sentencia->bindParam(':correo', $correo);
     $sentencia->bindParam(':sexo', $sexo);
 
     if($sentencia->execute()){
-        return header("Location: index.php");
+        return header("Location: modulo_usuario.php");
         echo "script> alert('Usuario agregado'); </script>";
     }else{
         return "error";

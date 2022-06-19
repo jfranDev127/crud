@@ -10,7 +10,7 @@ $sentencia->bindParam(':id', $id);
 
 
 if($sentencia->execute()){
-    return header("Location: index.php");
+    return header("Location: modulo_usuario.php");
     //echo "script> alert('Usuario actualizado'); </script>";
 
 }else{
