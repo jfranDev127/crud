@@ -24,22 +24,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="modulo_usuario.php">Usuarios</a>
+          <a class="nav-link active" aria-current="page" href="modulo_usuario.php">Usuarios <i class="bi bi-person-square"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="modulo_maquilladores.php">Maquilladores</a>
+          <a class="nav-link" href="modulo_maquilladores.php">Maquilladores <i class="bi bi-brush-fill"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Inventario</a>
+          <a class="nav-link" href="#">Inventario <i class="bi bi-receipt"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Estadisticas</a>
+          <a class="nav-link" href="#">Estadisticas <i class="bi bi-bar-chart-line-fill"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Categorias</a>
+          <a class="nav-link" href="#">Categorias <i class="bi bi-bell-fill"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cerrar Sesion</a>
+          <a class="nav-link" href="#">Cerrar Sesion <i class="bi bi-box-arrow-right"></i></a>
         </li>
       </ul>
     </div>
@@ -50,11 +50,11 @@
     
     <br>
     <div class="container">
-        <h1 class="text-center"> Lista de Usuarios</h1>
+        <h1 class="text-center"> Lista de Maquilladores</h1>
         <br><br>
         <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary center" data-bs-toggle="modal" data-bs-target="#insertar">
-            Agregar Usuario
+            Agregar Usuario <i class="bi bi-person-plus"></i>
             </button>
             <br><br>
         <table class="table table-striped table-hover caption-top">
@@ -86,12 +86,12 @@
                     <td><?php echo $usuario->sexo?></td>
                    <td>
                         <button type="button" class="btn btn-warning editbtn" data-bs-toggle="modal" data-bs-target="#editar">
-                            Editar
+                            Editar <i class="bi bi-pencil-square"></i>
                         </button>
                    </td>
                    <td>
                         <button type="button" class="btn btn-danger deletebtn" data-bs-toggle="modal" data-bs-target="#eliminar">
-                            Eliminar
+                            Eliminar <i class="bi bi-x-circle"></i>
                         </button>
                    </td>
                 </tr>
