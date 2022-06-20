@@ -8,7 +8,7 @@
     <!-- JavaScript Bundle with Popper -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="estilos.css">
+    <!--link rel="stylesheet" href="estilos.css"-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.js">
@@ -30,7 +30,7 @@
           <a class="nav-link" href="modulo_maquilladores.php">Maquilladores <i class="bi bi-brush-fill"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Inventario <i class="bi bi-receipt"></i></a>
+          <a class="nav-link" href="modulo_inventario.php">Inventario <i class="bi bi-receipt"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Estadisticas <i class="bi bi-bar-chart-line-fill"></i></a>
@@ -54,7 +54,7 @@
         <br><br>
         <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary center" data-bs-toggle="modal" data-bs-target="#insertar">
-            Agregar Usuario <i class="bi bi-person-plus"></i>
+            Agregar Maquillador <i class="bi bi-person-plus"></i>
             </button>
             <br><br>
         <table class="table table-striped table-hover caption-top">
@@ -65,16 +65,19 @@
                     <th scope="col">Nombre</th>
                     <th scope="col">Apellido</th>
                     <th scope="col">Usuario</th>
-                    <th scope="col">Contraseña</th>
+                    <th scope="col">Cargo</th>
                     <th scope="col">Email</th>
                     <th scope="col">Genero</th>
+                    <th scope="col">Fecha Nacimiento</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Estado</th>
                     <th scope="col">Editar</th>
                     <th scope="col">Eliminar</th>
                 </tr>
             </thead>
             <tbody>
-               <!--//Mostrar registro de la base de date_offset_get-->
-                <?php include_once("mostrar.php")?>
+               <!--//Mostrar registro de la base de date_offset_get
+                <?php /*include_once("mostrar.php")?>
                 <?php foreach($usuarios as $usuario) {?>
                  <tr>
                     <td><?php echo $usuario->id?></td>
@@ -93,11 +96,11 @@
                         <button type="button" class="btn btn-danger deletebtn" data-bs-toggle="modal" data-bs-target="#eliminar">
                             Eliminar <i class="bi bi-x-circle"></i>
                         </button>
-                   </td>
+                   </td-->
                 </tr>
                 
                 <?php
-                }      
+                }    */  
                 ?>
             </tbody>
         </table>
@@ -241,10 +244,6 @@
 </div>
 
 
-
-
-
-
 <!--Escript para traer los datos de la base de datos al formulario dentro del modal-->
 
 <script>
@@ -283,3 +282,7 @@ $('.deletebtn').on('click' ,function(){
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+

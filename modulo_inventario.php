@@ -50,24 +50,32 @@
     
     <br>
     <div class="container">
-        <h1 class="text-center"> Lista de Maquilladores</h1>
+        <h1 class="text-center"> Lista de Articulos</h1>
         <br><br>
+        <!--buscador-->
+        <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese articulo" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="bi bi-search"></i></button>
+        </div>
+        
         <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary center" data-bs-toggle="modal" data-bs-target="#insertar">
-            Agregar Usuario <i class="bi bi-person-plus"></i>
+            Agregar Articulo <i class="bi bi-bag-plus-fill"></i>
             </button>
+            
             <br><br>
         <table class="table table-striped table-hover caption-top">
             
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Apellido</th>
-                    <th scope="col">Usuario</th>
-                    <th scope="col">Contraseña</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Genero</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Serial</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Activo</th>
+                    <th scope="col">En stock</th>
                     <th scope="col">Editar</th>
                     <th scope="col">Eliminar</th>
                 </tr>
@@ -77,7 +85,7 @@
                 <?php include_once("mostrar.php")?>
                 <?php foreach($usuarios as $usuario) {?>
                  <tr>
-                    <td><?php echo $usuario->id?></td>
+                   <!-- <td><?php echo $usuario->id?></td>
                     <td><?php echo $usuario->nombre?></td>
                     <td><?php echo $usuario->apellido?></td>
                     <td><?php echo $usuario->usuario?></td>
@@ -93,7 +101,7 @@
                         <button type="button" class="btn btn-danger deletebtn" data-bs-toggle="modal" data-bs-target="#eliminar">
                             Eliminar <i class="bi bi-x-circle"></i>
                         </button>
-                   </td>
+                   </td>-->
                 </tr>
                 
                 <?php
