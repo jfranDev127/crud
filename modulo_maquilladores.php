@@ -243,6 +243,23 @@
   </div>
 </div>
 
+<!--footer-->
+
+<div class="card footer text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer color-primary text-muted">
+    2 days ago
+  </div>
+</div>
+
+
 
 <!--Escript para traer los datos de la base de datos al formulario dentro del modal-->
 
